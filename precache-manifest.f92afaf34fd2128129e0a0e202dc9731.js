@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "8b67fd8af8edc99ba1e7",
+    "revision": "7db304b41e220f7028a2",
     "url": "/react-multi-level-menu/static/css/main.10c508d1.chunk.css"
   },
   {
-    "revision": "8b67fd8af8edc99ba1e7",
-    "url": "/react-multi-level-menu/static/js/main.13bf52ac.chunk.js"
+    "revision": "7db304b41e220f7028a2",
+    "url": "/react-multi-level-menu/static/js/main.c8ac2208.chunk.js"
   },
   {
     "revision": "965d28839280c5ee5146",
     "url": "/react-multi-level-menu/static/js/runtime~main.b607ec9d.js"
   },
   {
-    "revision": "3abbfc053e7bf7f41d37",
+    "revision": "cf7d79541b4e7d37c9f2",
     "url": "/react-multi-level-menu/static/css/2.bfaca08c.chunk.css"
   },
   {
-    "revision": "3abbfc053e7bf7f41d37",
-    "url": "/react-multi-level-menu/static/js/2.f191e027.chunk.js"
+    "revision": "cf7d79541b4e7d37c9f2",
+    "url": "/react-multi-level-menu/static/js/2.310edcfd.chunk.js"
   },
   {
     "revision": "3cf97837524dd7445e9d1462e3c4afe2",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/react-multi-level-menu/static/media/open-iconic.eca2c267.svg"
   },
   {
-    "revision": "e37fc95197422b43f5ba1caa1c53a09e",
+    "revision": "1ff63cd553eecf9a5d04e54efcf3b20f",
     "url": "/react-multi-level-menu/index.html"
   }
 ];
