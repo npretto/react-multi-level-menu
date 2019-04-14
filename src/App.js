@@ -14,7 +14,11 @@ class App extends Component {
     return (
       <div className="App">
         <Menu>
-          <MainItem name="Group 1" open>
+          <MainItem
+            name="Group 1"
+            open
+            onClick={() => alert("You clicked on the main item")}
+          >
             <Item name="Sub group">
               <Item name="Sub Sub Group" />
             </Item>

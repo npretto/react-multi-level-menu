@@ -26,10 +26,18 @@ const IconContainer = styled.div`
   text-align: center;
 `
 
-const Item = props => {
-  const [open, setOpen] = useState(props.open)
+const Item = ({
+  open: propsOpen,
+  onClick,
+  children,
+  name,
+  level,
+  className,
+  ...otherProps
+}) => {
+  const [open, setOpen] = useState(propsOpen)
 
-  const icon = props.children ? (
+  const icon = children ? (
     <span
       className="oi"
       data-glyph={open ? "chevron-bottom" : "chevron-right"}
@@ -43,17 +51,21 @@ const Item = props => {
   return (
     <Fragment>
       <StyledItem
-        className={"light " + props.className}
-        onClick={() => setOpen(!open)}
-        level={props.level}
+        className={"light " + className}
+        onClick={e => {
+          setOpen(!open)
+          onClick(e)
+        }}
+        level={level}
+        {...otherProps}
       >
         <IconContainer>{icon}</IconContainer>
-        {props.name}
+        {name}
       </StyledItem>
-      {open && props.children && (
+      {open && children && (
         <List>
-          {React.Children.map(props.children, c =>
-            React.cloneElement(c, { level: props.level + 1 })
+          {React.Children.map(children, c =>
+            React.cloneElement(c, { level: level + 1 })
           )}
         </List>
       )}
@@ -63,7 +75,8 @@ const Item = props => {
 
 Item.propTypes = {
   /** if the item should be rendered as open the first time */
-  open: PropTypes.bool
+  open: PropTypes.bool,
+  name: PropTypes.string
 }
 
 Item.defaultProps = {
