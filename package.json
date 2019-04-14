@@ -2,7 +2,9 @@
   "name": "multi-level-menu",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://npretto.github.io/react-multi-level-menu/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "open-iconic": "^1.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -10,6 +12,8 @@
     "styled-components": "^4.2.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
